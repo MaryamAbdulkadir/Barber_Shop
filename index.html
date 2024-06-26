@@ -5,25 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Style, Our Passion</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style11.css"> 
 </head>
 <body>
     <header>
         <div class="container">
             <h1>MARYAM ABDULKADIR BARBER SHOP</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#media">Media</a></li> 
+                    <li><a href="#contact">Contact Us</a></li> 
+                </ul>
+            </nav>
         </div>
     </header>
 
     <section id="hero">
         <div class="container">
             <div class="hero-content">
-                <img src="./logo.png" alt="MARYAM ABDULKADIR Cut Logo"> <p>Experience the best haircuts and grooming services in Dutsen Gwari Minna. </p>
+                <img src="./logo.png" alt="MARYAM ABDULKADIR Cut Logo">
+                <p>Experience the best haircuts and grooming services in Dutsen Gwari Minna.</p>
                 <a href="#services" class="btn">Explore Our Services</a>
             </div>
         </div>
     </section>
-
-   
 
     <section id="about">
         <div class="container">
@@ -38,17 +46,17 @@
             <div class="service">
                 <i class="fas fa-scissors"></i>
                 <h3>Haircuts</h3>
-                <p>From classic to modern, we offer a wide variety of haircuts to suit your style and personality. </p>
+                <p>From classic to modern, we offer a wide variety of haircuts to suit your style and personality.</p>
             </div>
             <div class="service">
-                <i class="fas fa-plus"></i>
+                <i class="fas fa-plus"></i> 
                 <h3>Shaves</h3>
-                <p>Indulge in the luxury of a traditional hot towel shave, leaving your skin feeling smooth and refreshed. </p>
+                <p>Indulge in the luxury of a traditional hot towel shave, leaving your skin feeling smooth and refreshed.</p>
             </div>
             <div class="service">
                 <i class="fas fa-spray-can"></i>
                 <h3>Grooming</h3>
-                <p>Complete your look with our beard trims, lineups, and other grooming services. </p>
+                <p>Complete your look with our beard trims, lineups, and other grooming services.</p>
             </div>
         </div>
     </section>
@@ -67,11 +75,11 @@
                     <tbody>
                         <tr>
                             <td>Men's Haircut</td>
-                            <td>₦2500</td> 
+                            <td>₦2500</td>
                         </tr>
                         <tr>
                             <td>Kid's Haircut</td>
-                            <td>₦1000</td> 
+                            <td>₦1000</td>
                         </tr>
                         <tr>
                             <td>Beard Trim</td>
@@ -87,22 +95,51 @@
         </div>
     </section>
 
+    <section id="media">
+        <div class="container">
+            <h2>Media</h2>
+            <div class="gallery">
+                <img src="image1.jpg" alt="Gallery Image 1">
+                <img src="image2.jpg" alt="Gallery Image 2">
+                <img src="image3.jpg" alt="Gallery Image 3">
+
+                <div class="video-container"> 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/T9iOlD5fojs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="opening-hours">
         <div class="container">
             <h2>Opening Hours</h2>
             <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
             <p>Saturday: 9:00 AM - 6:00 PM</p>
-            <p>Sunday: Closed</p> 
+            <p>Sunday: Closed</p>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <ul>
-                <li><i class="fas fa-map-marker-alt"></i> Dutsen Gwari Minna, Nigeria</li>
-                <li><i class="fas fa-phone"></i> <a href="tel:+23480123456789">+234 MARYAM ABDULKADIR CUT</a></li> 
-            </ul>
+            <form action="mailto:hajiyalaie@gmail.com" method="post"> 
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Your Address" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+                <label for="details">Other Details:</label>
+                <textarea id="details" name="details" placeholder="Enter any other details here"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </section>
 
